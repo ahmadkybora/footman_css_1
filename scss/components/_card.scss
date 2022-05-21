@@ -1,0 +1,28 @@
+@import "../styles/box-shadow";
+.f-card {
+    width: 25%;
+    margin: 1%;
+    border: 1px gray solid;
+    border-radius: 10px;
+    text-align: center;
+    @extend .f-box-shadow-1;
+}
+
+.f-card-title {
+    padding: 1%;
+}
+
+.f-card-body {
+    padding: 1%;
+}
+
+.f-card-footer {
+    padding: 1%;
+}
+
+.f-card-text {
+    padding: 1%;
+}
+
+// .f-card-img{
+// }
