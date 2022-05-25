@@ -9,10 +9,10 @@
 
 .f-alert-danger {
     @include redBorder;
-    @extend .bg-red-100;
+    background-color: $red100;
 }
 
 .f-alert-success {
     @include greenBorder;
-    @extend .bg-green-200;
+    // @extend .bg-green-200;
 }

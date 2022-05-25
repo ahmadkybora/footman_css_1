@@ -1,2 +1,137 @@
-@import "bg";
-@import "txt";
+@import "../vars";
+
+/**
+موارد زیر متغییر ها را گرفته و رنگ ها را 
+برای پشت زمینه میسازد
+*/
+@each $val, $slate in 
+    (
+        50: $slate50, 
+        100: $slate100, 
+        200: $slate200, 
+        300: $slate300, 
+        400: $slate400, 
+        500: $slate500, 
+        600: $slate600, 
+        700: $slate700, 
+        800: $slate800, 
+        900: $slate900
+    )
+    {
+    .f-bg-slate-#{$val} {
+        background-color: $slate;
+    }
+    .f-txt-slate-#{$val} {
+        color: $slate;
+    }
+}
+
+@each $val, $gray in 
+    (
+        50: $gray50, 
+        100: $gray100, 
+        200: $gray200, 
+        300: $gray300, 
+        400: $gray400, 
+        500: $gray500, 
+        600: $gray600, 
+        700: $gray700, 
+        800: $gray800, 
+        900: $gray900
+    )
+    {
+    .f-bg-gray-#{$val} {
+        background-color: $gray;
+    }
+    .f-txt-gray-#{$val} {
+        color: $gray;
+    }
+}
+
+@each $val, $zinc in 
+    (
+        50: $zinc50, 
+        100: $zinc100, 
+        200: $zinc200, 
+        300: $zinc300, 
+        400: $zinc400, 
+        500: $zinc500, 
+        600: $zinc600, 
+        700: $zinc700, 
+        800: $zinc800, 
+        900: $zinc900
+    )
+    {
+    .f-bg-zinc-#{$val} {
+        background-color: $zinc;
+    }
+    .f-txt-zinc-#{$val} {
+        color: $zinc;
+    }
+}
+
+@each $val, $neutral in 
+    (
+        50: $neutral50, 
+        100: $neutral100, 
+        200: $neutral200, 
+        300: $neutral300, 
+        400: $neutral400, 
+        500: $neutral500, 
+        600: $neutral600, 
+        700: $neutral700, 
+        800: $neutral800, 
+        900: $neutral900
+    )
+    {
+    .f-bg-natural-#{$val} {
+        background-color: $neutral;
+    }
+    .f-txt-neutral-#{$val} {
+        color: $neutral;
+    }
+}
+
+@each $val, $stone in 
+    (
+        50: $stone50, 
+        100: $stone100, 
+        200: $stone200, 
+        300: $stone300, 
+        400: $stone400, 
+        500: $stone500, 
+        600: $stone600, 
+        700: $stone700, 
+        800: $stone800, 
+        900: $stone900
+    )
+    {
+    .f-bg-stone-#{$val} {
+        background-color: $stone;
+    }
+    .f-txt-stone-#{$val} {
+        color: $stone;
+    }
+}
+
+@each $val, $red in 
+    (
+        50: $red50, 
+        100: $red100, 
+        200: $red200, 
+        300: $red300, 
+        400: $red400, 
+        500: $red500, 
+        600: $red600, 
+        700: $red700, 
+        800: $red800, 
+        900: $red900
+    )
+    {
+    .f-bg-red-#{$val} {
+        background-color: $red;
+    }
+    .f-txt-red-#{$val} {
+        color: $red;
+    }
+}
