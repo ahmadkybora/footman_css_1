@@ -1,9 +1,9 @@
 export default class Dropdown
 {
-    dropdown = document.getElementById("myDropdown");
+    private dropdown: (any) = document.getElementById("myDropdown");
 
     dropdownOpen() {
-        var display = dropdown.style.display;
-        (display === "block") ? (dropdown.style.display = "none") : (dropdown.style.display = "block");
+        var display = this.dropdown.style.display;
+        (display === "block") ? (this.dropdown.style.display = "none") : (this.dropdown.style.display = "block");
     }
 }
