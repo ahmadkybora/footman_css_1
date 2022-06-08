@@ -276,6 +276,12 @@
 .f-card-text {
   padding: 1%; }
 
+.f-card-img {
+  background-color: aliceblue;
+  padding: 1%;
+  margin: 1%;
+  height: 180px; }
+
 .modal {
   display: none;
   position: fixed;
@@ -356,6 +362,18 @@
 
 .f-dropdown-content a:hover {
   background-color: #ddd; }
+
+.f-pagination {
+  display: inline-block; }
+
+.f-pagination a {
+  border-radius: 5px;
+  background-color: #3498DB;
+  color: white;
+  border: 1px white solid;
+  float: left;
+  padding: 4px 8px;
+  text-decoration: none; }
 
 /**
 موارد زیر متغییر ها را گرفته و رنگ ها را 
