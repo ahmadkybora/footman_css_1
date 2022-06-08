@@ -19,7 +19,7 @@
         "dom"
       ]
     },
-    "files": ["src/modal.ts"],
+    "files": ["js/src/footman.ts"],
     "exclude": [
       "node_modules"
     ]
