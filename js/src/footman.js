@@ -16,6 +16,9 @@ document.addEventListener('click', function (e) {
             case 'f-dropdown-btn':
                 new DropDown();
                 break;
+            case 'f-accordion':
+                new Accordion();
+                break;
         }
     });
 });
@@ -46,5 +49,17 @@ var DropDown = /** @class */ (function () {
     }
     DropDown.dropdownCtn = document.getElementsByClassName("f-dropdown-content")[0];
     return DropDown;
+}());
+var Accordion = /** @class */ (function () {
+    function Accordion() {
+        if (Accordion.accordionPanel.style.display === '') {
+            Accordion.accordionPanel.style.display = 'block';
+        }
+        else {
+            Accordion.accordionPanel.style.display = '';
+        }
+    }
+    Accordion.accordionPanel = document.getElementsByClassName("f-accordion-panel")[0];
+    return Accordion;
 }());
 //# sourceMappingURL=footman.js.map

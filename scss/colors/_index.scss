@@ -6,16 +6,16 @@
 */
 @each $val, $slate in 
     (
-        50: $slate50, 
-        100: $slate100, 
-        200: $slate200, 
-        300: $slate300, 
-        400: $slate400, 
-        500: $slate500, 
-        600: $slate600, 
-        700: $slate700, 
-        800: $slate800, 
-        900: $slate900
+        0: $slate0, 
+        1: $slate1, 
+        2: $slate2, 
+        3: $slate3, 
+        4: $slate4, 
+        5: $slate5, 
+        6: $slate6, 
+        7: $slate7, 
+        8: $slate8, 
+        9: $slate9
     )
     {
     .f-bg-slate-#{$val} {
@@ -28,16 +28,16 @@
 
 @each $val, $gray in 
     (
-        50: $gray50, 
-        100: $gray100, 
-        200: $gray200, 
-        300: $gray300, 
-        400: $gray400, 
-        500: $gray500, 
-        600: $gray600, 
-        700: $gray700, 
-        800: $gray800, 
-        900: $gray900
+        0: $gray0, 
+        1: $gray1, 
+        2: $gray2, 
+        3: $gray3, 
+        4: $gray4, 
+        5: $gray5, 
+        6: $gray6, 
+        7: $gray7, 
+        8: $gray8, 
+        9: $gray9
     )
     {
     .f-bg-gray-#{$val} {
@@ -50,16 +50,16 @@
 
 @each $val, $zinc in 
     (
-        50: $zinc50, 
-        100: $zinc100, 
-        200: $zinc200, 
-        300: $zinc300, 
-        400: $zinc400, 
-        500: $zinc500, 
-        600: $zinc600, 
-        700: $zinc700, 
-        800: $zinc800, 
-        900: $zinc900
+        0: $zinc0, 
+        1: $zinc1, 
+        2: $zinc2, 
+        3: $zinc3, 
+        4: $zinc4, 
+        5: $zinc5, 
+        6: $zinc6, 
+        7: $zinc7, 
+        8: $zinc8, 
+        9: $zinc9
     )
     {
     .f-bg-zinc-#{$val} {
@@ -72,16 +72,16 @@
 
 @each $val, $neutral in 
     (
-        50: $neutral50, 
-        100: $neutral100, 
-        200: $neutral200, 
-        300: $neutral300, 
-        400: $neutral400, 
-        500: $neutral500, 
-        600: $neutral600, 
-        700: $neutral700, 
-        800: $neutral800, 
-        900: $neutral900
+        0: $neutral0, 
+        1: $neutral1, 
+        2: $neutral2, 
+        3: $neutral3, 
+        4: $neutral4, 
+        5: $neutral5, 
+        6: $neutral6, 
+        7: $neutral7, 
+        8: $neutral8, 
+        9: $neutral9
     )
     {
     .f-bg-natural-#{$val} {
@@ -94,16 +94,16 @@
 
 @each $val, $stone in 
     (
-        50: $stone50, 
-        100: $stone100, 
-        200: $stone200, 
-        300: $stone300, 
-        400: $stone400, 
-        500: $stone500, 
-        600: $stone600, 
-        700: $stone700, 
-        800: $stone800, 
-        900: $stone900
+        0: $stone0, 
+        1: $stone1, 
+        2: $stone2, 
+        3: $stone3, 
+        4: $stone4, 
+        5: $stone5, 
+        6: $stone6, 
+        7: $stone7, 
+        8: $stone8, 
+        9: $stone9
     )
     {
     .f-bg-stone-#{$val} {
@@ -116,16 +116,16 @@
 
 @each $val, $red in 
     (
-        50: $red50, 
-        100: $red100, 
-        200: $red200, 
-        300: $red300, 
-        400: $red400, 
-        500: $red500, 
-        600: $red600, 
-        700: $red700, 
-        800: $red800, 
-        900: $red900
+        0: $red0, 
+        1: $red1, 
+        2: $red2, 
+        3: $red3, 
+        4: $red4, 
+        5: $red5, 
+        6: $red6, 
+        7: $red7, 
+        8: $red8, 
+        9: $red9
     )
     {
     .f-bg-red-#{$val} {

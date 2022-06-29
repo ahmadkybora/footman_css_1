@@ -17,6 +17,14 @@ document.addEventListener('click', (e) => {
             case 'f-dropdown-btn':
                 new DropDown();
             break;
+
+            case 'f-accordion':
+                new Accordion();
+            break;
+
+            case 'f-prev':
+                new Carousel();
+            break;
         }
     });
 });
@@ -47,4 +55,20 @@ class DropDown{
             DropDown.dropdownCtn.style.display = '';
         }
     }
+}
+
+class Accordion{
+    private static accordionPanel: (any) = document.getElementsByClassName("f-accordion-panel")[0];
+
+    constructor() {
+        if(Accordion.accordionPanel.style.display === '') {
+            Accordion.accordionPanel.style.display = 'block';
+        } else {
+            Accordion.accordionPanel.style.display = '';
+        }
+    }
+}
+
+class Carousel{
+    private static
 }
