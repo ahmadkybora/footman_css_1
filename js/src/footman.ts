@@ -23,7 +23,15 @@ document.addEventListener('click', (e) => {
             break;
 
             case 'f-prev':
-                new Carousel();
+                Carousel.prev();
+            break;
+
+            case 'f-next':
+                Carousel.next();
+            break;
+
+            case 'f-dot':
+                Carousel.dot();
             break;
         }
     });
@@ -70,5 +78,42 @@ class Accordion{
 }
 
 class Carousel{
-    private static
+    private static slideIndex = 1;
+    private static carouselPrev: (any) = document.getElementsByClassName("f-prev")[0];
+    private static carouselNext: (any) = document.getElementsByClassName("f-next")[0];
+    private static carouselSlides: (any) = document.getElementsByClassName("f-my-slides");
+    private static carouselDots: (any) = document.getElementsByClassName("f-dot");
+
+    public static prev() {
+        console.log(Carousel.carouselSlides.length);
+        for(let i = 0; i < Carousel.carouselDots.length; i++) {
+            console.log(Carousel.carouselDots[i].clicked() == true);
+            Carousel.carouselDots[i].getAttribute("f-data-slide-to");
+        }
+    }
+
+    public static next() {}
+
+    public static dot() {
+        // console.log(typeof Carousel.carouselDots)
+        Object.entries(Carousel.carouselDots).forEach((element: any ) => {
+console.log(element)
+            // element.addEventListener('click', (event: any)=> {
+            //     console.log(element);
+            // });
+        });
+
+        // Carousel.carouselDots.addEventListener("click", () => {
+        //     console.log(Carousel.carouselDots);
+        // });
+        // Object.keys(Carousel.carouselDots).map(b => {
+        //     console.log(b);
+        // })
+        // for(let i = 0; i < Carousel.carouselDots.length; i++) {
+        //     console.log(Carousel.carouselDots[i].getAttribute("f-data-slide-to"));
+        // }
+        // Carousel.carouselDots.getAttribute("f-data-slide-to")[0].forEach((element: any ) => {
+        //     console.log(element)
+        // });
+    }
 }

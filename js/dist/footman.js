@@ -20,7 +20,13 @@ document.addEventListener('click', (e) => {
                 new Accordion();
                 break;
             case 'f-prev':
-                new Carousel();
+                Carousel.prev();
+                break;
+            case 'f-next':
+                Carousel.next();
+                break;
+            case 'f-dot':
+                Carousel.dot();
                 break;
         }
     });
@@ -61,5 +67,20 @@ class Accordion {
 }
 Accordion.accordionPanel = document.getElementsByClassName("f-accordion-panel")[0];
 class Carousel {
+    static prev() {
+        // console.log(Carousel.carouselDots.getAttribute("f-data-slide-to")[0]);
+    }
+    static next() { }
+    static dot() {
+        // console.log(Carousel.carouselDots.getAttribute("f-data-slide-to")[0]);
+        // Carousel.carouselDots.getAttribute("f-data-slide-to")[0].forEach((element: any ) => {
+        //     console.log(element)
+        // });
+    }
 }
+Carousel.slideIndex = 1;
+Carousel.carouselPrev = document.getElementsByClassName("f-prev")[0];
+Carousel.carouselNext = document.getElementsByClassName("f-next")[0];
+Carousel.carouselSlides = document.getElementsByClassName("mySlides");
+Carousel.carouselDots = document.getElementsByClassName("f-dot");
 //# sourceMappingURL=footman.js.map

@@ -19,6 +19,15 @@ document.addEventListener('click', function (e) {
             case 'f-accordion':
                 new Accordion();
                 break;
+            case 'f-prev':
+                Carousel.prev();
+                break;
+            case 'f-next':
+                Carousel.next();
+                break;
+            case 'f-dot':
+                Carousel.dot();
+                break;
         }
     });
 });
@@ -61,5 +70,44 @@ var Accordion = /** @class */ (function () {
     }
     Accordion.accordionPanel = document.getElementsByClassName("f-accordion-panel")[0];
     return Accordion;
+}());
+var Carousel = /** @class */ (function () {
+    function Carousel() {
+    }
+    Carousel.prev = function () {
+        console.log(Carousel.carouselSlides.length);
+        for (var i = 0; i < Carousel.carouselDots.length; i++) {
+            console.log(Carousel.carouselDots[i].clicked() == true);
+            Carousel.carouselDots[i].getAttribute("f-data-slide-to");
+        }
+    };
+    Carousel.next = function () { };
+    Carousel.dot = function () {
+        // console.log(typeof Carousel.carouselDots)
+        Object.entries(Carousel.carouselDots).forEach(function (element) {
+            console.log(element);
+            // element.addEventListener('click', (event: any)=> {
+            //     console.log(element);
+            // });
+        });
+        // Carousel.carouselDots.addEventListener("click", () => {
+        //     console.log(Carousel.carouselDots);
+        // });
+        // Object.keys(Carousel.carouselDots).map(b => {
+        //     console.log(b);
+        // })
+        // for(let i = 0; i < Carousel.carouselDots.length; i++) {
+        //     console.log(Carousel.carouselDots[i].getAttribute("f-data-slide-to"));
+        // }
+        // Carousel.carouselDots.getAttribute("f-data-slide-to")[0].forEach((element: any ) => {
+        //     console.log(element)
+        // });
+    };
+    Carousel.slideIndex = 1;
+    Carousel.carouselPrev = document.getElementsByClassName("f-prev")[0];
+    Carousel.carouselNext = document.getElementsByClassName("f-next")[0];
+    Carousel.carouselSlides = document.getElementsByClassName("f-my-slides");
+    Carousel.carouselDots = document.getElementsByClassName("f-dot");
+    return Carousel;
 }());
 //# sourceMappingURL=footman.js.map
