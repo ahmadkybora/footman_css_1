@@ -1,4 +1,11 @@
 "use strict";
+var carouselDots = document.getElementsByClassName("f-dot");
+for (var i = 0; i < carouselDots.length; i++) {
+    // console.log(Carousel.carouselDots[i])
+    carouselDots[i].addEventListener('click', function (event) {
+        event.target.getAttribute('f-data-slide-to').style.display = "none";
+    });
+}
 document.addEventListener('click', function (e) {
     var _a;
     var target = e.target;
@@ -83,13 +90,19 @@ var Carousel = /** @class */ (function () {
     };
     Carousel.next = function () { };
     Carousel.dot = function () {
-        // console.log(typeof Carousel.carouselDots)
-        Object.entries(Carousel.carouselDots).forEach(function (element) {
-            console.log(element);
-            // element.addEventListener('click', (event: any)=> {
-            //     console.log(element);
-            // });
-        });
+        // console.log(Carousel.carouselDots)
+        for (var i = 0; i < Carousel.carouselDots.length; i++) {
+            // console.log(Carousel.carouselDots[i])
+            Carousel.carouselDots[i].addEventListener('click', function (event) {
+                // console.log(event.target.getAttribute('f-data-slide-to'));
+            });
+        }
+        //         Object.entries(Carousel.carouselDots).forEach((element: any ) => {
+        // // console.log(element)
+        //             element.addEventListener('click', (event: any)=> {
+        //                 console.log(event);
+        //             });
+        //         });
         // Carousel.carouselDots.addEventListener("click", () => {
         //     console.log(Carousel.carouselDots);
         // });

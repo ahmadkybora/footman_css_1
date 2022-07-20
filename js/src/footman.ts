@@ -1,3 +1,11 @@
+const carouselDots: (any) = document.getElementsByClassName("f-dot");
+for(let i=0; i<carouselDots.length; i++) {
+    // console.log(Carousel.carouselDots[i])
+    carouselDots[i].addEventListener('click', (event: any)=> {
+        event.target.getAttribute('f-data-slide-to').style.display = "none";
+    });
+}
+
 document.addEventListener('click', (e) => {
     const target = e.target as HTMLTextAreaElement;
     target?.classList?.forEach((element: any) => {
@@ -95,13 +103,19 @@ class Carousel{
     public static next() {}
 
     public static dot() {
-        // console.log(typeof Carousel.carouselDots)
-        Object.entries(Carousel.carouselDots).forEach((element: any ) => {
-console.log(element)
-            // element.addEventListener('click', (event: any)=> {
-            //     console.log(element);
-            // });
-        });
+        // console.log(Carousel.carouselDots)
+        for(let i=0; i<Carousel.carouselDots.length; i++) {
+            // console.log(Carousel.carouselDots[i])
+            Carousel.carouselDots[i].addEventListener('click', (event: any)=> {
+                // console.log(event.target.getAttribute('f-data-slide-to'));
+            });
+        }
+//         Object.entries(Carousel.carouselDots).forEach((element: any ) => {
+// // console.log(element)
+//             element.addEventListener('click', (event: any)=> {
+//                 console.log(event);
+//             });
+//         });
 
         // Carousel.carouselDots.addEventListener("click", () => {
         //     console.log(Carousel.carouselDots);
