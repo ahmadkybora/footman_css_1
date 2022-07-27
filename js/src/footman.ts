@@ -1,8 +1,19 @@
+const carouselSlides: (any) = document.getElementsByClassName("f-my-slides");
 const carouselDots: (any) = document.getElementsByClassName("f-dot");
+for(let i=0; i<carouselSlides.length; i++) {
+    carouselSlides[i].style.display = 'none';
+}
 for(let i=0; i<carouselDots.length; i++) {
-    // console.log(Carousel.carouselDots[i])
+    // console.log(carouselDots[i])
     carouselDots[i].addEventListener('click', (event: any)=> {
-        event.target.getAttribute('f-data-slide-to').style.display = "none";
+        // dots[i].className = dots[i].className.replace(" active", "");
+        event.target.className = event.target.className.replace(" f-active", "");
+        let b = event.target.getAttribute('f-data-slide-to');
+        console.log(event.target.getAttribute('f-data-slide-to'));
+        carouselSlides[b].style.display = 'block';
+        b === 1 ? "" : carouselSlides[b-1].style.display = 'none';
+        console.log(carouselSlides);
+        //.style.display = "none";
     });
 }
 
